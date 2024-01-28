@@ -11,9 +11,16 @@ public class E2PruebaEmplreado {
 		
 		Empleado e1 = new Empleado("jose", 18);
 		 
+		Empleado e2 = new Empleado("pedro", 20);
 		
 		e1.setSueldo(1200);
 		e1.getSueldo();
+
+		//MODIFICAMOS EL SUELDO
+		e2.setSueldo(1400);
+
+		//LLAMOS A SUELDO
+		e2.getSueldo();
 	}
 }
 
@@ -91,18 +98,7 @@ public class E2PruebaEmplreado {
 	  }
 	
 	
-	//Ejercicio E3
 	
-	//La solucion que se propone es erronea, ya que un metodo estatico no puede acceder directamente a las varibales de instancia
-	//Porque estas variables pertenecen a la instancia de la clase, no a la clase en si.
-	//Si queremos acceder a las variables como estatico, debemos modificar la variable nombre y ponerla como Static.
-	// Y podriamos acceder a ella directamente como Empleado.Nombre
-	
-	//Si queremos acceder a las variables de instancia, lo hariamos con un metodo getters no estatico.
-	
-	//public  String getNombre() {
-		//return nombre;
-	//}
 }
   
   
